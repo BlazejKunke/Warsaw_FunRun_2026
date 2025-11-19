@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Warsaw Fun Run 2026</title>
+  <style>
+    :root {
+      --primary: #0d2c54;
+      --accent: #ff6b35;
+      --muted: #f4f6f8;
+      --text: #1d1d1b;
+      --border: #d9d9d9;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--muted);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), #123a6f);
+      color: white;
+      padding: 3rem 1rem 4rem;
+      text-align: center;
+    }
+
+    header .tagline {
+      text-transform: uppercase;
+      letter-spacing: 0.3rem;
+      font-size: 0.9rem;
+      margin-bottom: 0.8rem;
+      opacity: 0.8;
+    }
+
+    header h1 {
+      font-size: 2.6rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto 1.5rem;
+      opacity: 0.95;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      padding: 0.85rem 2.2rem;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
+      letter-spacing: 0.05rem;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+
+    .cta-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 26px rgba(0,0,0,0.2);
+    }
+
+    main {
+      max-width: 1100px;
+      margin: -2.5rem auto 3rem;
+      padding: 0 1rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 18px;
+      padding: 2rem;
+      box-shadow: 0 14px 30px rgba(13,44,84,0.08);
+      margin-bottom: 1.8rem;
+      border: 1px solid var(--border);
+    }
+
+    .card h2 {
+      font-size: 1.4rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    .details-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.2rem;
+    }
+
+    .detail-item {
+      background: var(--muted);
+      padding: 1.2rem;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+    }
+
+    .detail-item h3 {
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1rem;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .qr-placeholder {
+      border: 2px dashed var(--border);
+      border-radius: 16px;
+      padding: 2rem;
+      text-align: center;
+      color: #5c5c5c;
+      background: #fff;
+      font-weight: 600;
+    }
+
+    .two-column {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    ul li {
+      padding-left: 1.6rem;
+      position: relative;
+      margin-bottom: 0.6rem;
+    }
+
+    ul li::before {
+      content: "•";
+      color: var(--accent);
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    .sponsor-logos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .sponsor-logos span {
+      flex: 1 1 140px;
+      background: var(--muted);
+      padding: 1rem;
+      border-radius: 12px;
+      text-align: center;
+      border: 1px solid var(--border);
+      font-weight: 600;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem 3rem;
+      color: #6b6b6b;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <p class="tagline">Corporate Open Fun Run</p>
+    <h1>Warsaw Fun Run 2026</h1>
+    <p>Hosted by OneHouse together with leading Warsaw companies to bring colleagues, partners, and the community together for a refreshing spring run through the city center.</p>
+    <a class="cta-btn" href="#register">Register Now</a>
+  </header>
+
+  <main>
+    <section class="card" aria-label="Event snapshot">
+      <h2>Event Snapshot</h2>
+      <div class="details-grid">
+        <article class="detail-item">
+          <h3>Date</h3>
+          <p>Sunday, March 22, 2026</p>
+        </article>
+        <article class="detail-item">
+          <h3>Location</h3>
+          <p>Warsaw City Center</p>
+        </article>
+        <article class="detail-item">
+          <h3>Eligibility</h3>
+          <p>Open to employees, families, and the wider public.</p>
+        </article>
+        <article class="detail-item">
+          <h3>Hosted by</h3>
+          <p>OneHouse + partner Warsaw companies</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="card two-column" aria-label="Experience">
+      <div>
+        <h2>What to Expect</h2>
+        <ul>
+          <li>Professionally marked route across the central business district.</li>
+          <li>Warm-up session led by OneHouse wellness coaches.</li>
+          <li>Networking lounge with refreshments post-run.</li>
+          <li>Family-friendly zone with cheering supplies.</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Key Highlights</h2>
+        <ul>
+          <li>Corporate-style hospitality with a sporty atmosphere.</li>
+          <li>Opportunity to connect with Warsaw’s business community.</li>
+          <li>Charity pledge board supporting local youth sport initiatives.</li>
+          <li>Finisher medal and digital certificate for all participants.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="register" class="card" aria-label="Registration">
+      <h2>Registration</h2>
+      <p>Secure your spot with the official registration QR code (coming soon). Keep an eye on this page—once the code is published you can register instantly from any device.</p>
+      <div class="qr-placeholder">QR Code will be added here</div>
+      <p style="margin-top:1rem;">In the meantime, you can also express interest by emailing <a href="mailto:funrun@onehouse.com">funrun@onehouse.com</a>.</p>
+    </section>
+
+    <section class="card" aria-label="Sponsors">
+      <h2>Sponsors & Partners</h2>
+      <p>Thank you to the Warsaw companies that power the Fun Run experience. Sponsor placements will be updated as commitments are confirmed.</p>
+      <div class="sponsor-logos">
+        <span>OneHouse</span>
+        <span>Partner A</span>
+        <span>Partner B</span>
+        <span>Partner C</span>
+      </div>
+    </section>
+
+    <section class="card" aria-label="Contact">
+      <h2>Stay in Touch</h2>
+      <p>For partnership opportunities, group bookings, or volunteer support, contact our event office.</p>
+      <p><strong>Email:</strong> <a href="mailto:funrun@onehouse.com">funrun@onehouse.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2026 OneHouse &amp; Warsaw Corporate Partners. All rights reserved.
+  </footer>
+</body>
+</html>
